@@ -1,0 +1,138 @@
+{
+  "validation_window": [
+    "2026-06-01",
+    "2026-06-30"
+  ],
+  "validation_rows": 713,
+  "validation_fraud_count": 22,
+  "validation_base_fraud_rate": 0.030855539971949508,
+  "naive_always_not_fraud_accuracy": 0.9691444600280505,
+  "roc_auc": 0.7669385607156953,
+  "roc_auc_hgb_comparison_not_chosen": 0.6355084857255625,
+  "average_precision": 0.20659466791532058,
+  "precision_at_40": 0.225,
+  "economics_at_40_per_month": {
+    "k": 40,
+    "fraud_claims_caught": 9,
+    "fraud_rupees_caught": 11246.0,
+    "genuine_claims_held": 31,
+    "review_cost_inr": 10400,
+    "goodwill_cost_inr": 11780,
+    "net_rupees": -10934.0
+  },
+  "economics_sweep_by_k": {
+    "5": {
+      "k": 5,
+      "fraud_claims_caught": 2,
+      "fraud_rupees_caught": 3076.0,
+      "genuine_claims_held": 3,
+      "review_cost_inr": 1300,
+      "goodwill_cost_inr": 1140,
+      "net_rupees": 636.0
+    },
+    "10": {
+      "k": 10,
+      "fraud_claims_caught": 4,
+      "fraud_rupees_caught": 5793.0,
+      "genuine_claims_held": 6,
+      "review_cost_inr": 2600,
+      "goodwill_cost_inr": 2280,
+      "net_rupees": 913.0
+    },
+    "15": {
+      "k": 15,
+      "fraud_claims_caught": 6,
+      "fraud_rupees_caught": 7734.0,
+      "genuine_claims_held": 9,
+      "review_cost_inr": 3900,
+      "goodwill_cost_inr": 3420,
+      "net_rupees": 414.0
+    },
+    "20": {
+      "k": 20,
+      "fraud_claims_caught": 6,
+      "fraud_rupees_caught": 7734.0,
+      "genuine_claims_held": 14,
+      "review_cost_inr": 5200,
+      "goodwill_cost_inr": 5320,
+      "net_rupees": -2786.0
+    },
+    "25": {
+      "k": 25,
+      "fraud_claims_caught": 6,
+      "fraud_rupees_caught": 7734.0,
+      "genuine_claims_held": 19,
+      "review_cost_inr": 6500,
+      "goodwill_cost_inr": 7220,
+      "net_rupees": -5986.0
+    },
+    "30": {
+      "k": 30,
+      "fraud_claims_caught": 6,
+      "fraud_rupees_caught": 7734.0,
+      "genuine_claims_held": 24,
+      "review_cost_inr": 7800,
+      "goodwill_cost_inr": 9120,
+      "net_rupees": -9186.0
+    },
+    "35": {
+      "k": 35,
+      "fraud_claims_caught": 8,
+      "fraud_rupees_caught": 10379.0,
+      "genuine_claims_held": 27,
+      "review_cost_inr": 9100,
+      "goodwill_cost_inr": 10260,
+      "net_rupees": -8981.0
+    },
+    "40": {
+      "k": 40,
+      "fraud_claims_caught": 9,
+      "fraud_rupees_caught": 11246.0,
+      "genuine_claims_held": 31,
+      "review_cost_inr": 10400,
+      "goodwill_cost_inr": 11780,
+      "net_rupees": -10934.0
+    }
+  },
+  "random_selection_baseline_at_40": {
+    "expected_fraud_claims_caught": 1.2342215988779803,
+    "expected_fraud_rupees_caught": 2562.300140252454,
+    "expected_net_rupees": -22568.695652173912
+  },
+  "model_vs_random_fraud_rupees_lift": 4.389025244674096,
+  "walk_forward_monthly_auc_hgb_vs_logreg": {
+    "2026-03": {
+      "n_fraud": 9,
+      "hgb_auc": 0.918,
+      "logreg_auc": 0.803
+    },
+    "2026-04": {
+      "n_fraud": 9,
+      "hgb_auc": 0.693,
+      "logreg_auc": 0.67
+    },
+    "2026-05": {
+      "n_fraud": 14,
+      "hgb_auc": 0.264,
+      "logreg_auc": 0.273
+    },
+    "2026-06": {
+      "n_fraud": 22,
+      "hgb_auc": 0.636,
+      "logreg_auc": 0.767
+    }
+  },
+  "probability_calibration_check": {
+    "oof_sum_before_calibration": 3429.7821605526146,
+    "oof_sum_after_calibration": 140.34112912626065,
+    "actual_fraud_count": 141,
+    "auc_before": 0.8327878043829208,
+    "auc_after": 0.8327878043829208
+  },
+  "review_threshold_basis": {
+    "avg_monthly_claim_volume": 743.0666666666667,
+    "monthly_review_capacity": 40,
+    "target_percentile": 0.9461690292481608,
+    "review_threshold": 0.05522982147033273
+  }
+}

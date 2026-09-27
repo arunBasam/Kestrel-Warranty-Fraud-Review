@@ -1,0 +1,49 @@
+{
+  "random_selection_expected_value": {
+    "fraud_claims_caught": 1.23,
+    "precision": 0.0309,
+    "fraud_rupees_caught": 2562.0,
+    "net_rupees": -22569.0,
+    "note": "expected value under random selection at base_rate, not a single draw -- matches validation_metrics.json random_selection_baseline_at_40"
+  },
+  "highest_claim_amount": {
+    "fraud_claims_caught": 1,
+    "precision": 0.025,
+    "fraud_rupees_caught": 17866.0,
+    "net_rupees": -7354.0
+  },
+  "new_partner_any": {
+    "fraud_claims_caught": 4,
+    "precision": 0.1,
+    "fraud_rupees_caught": 6573.0,
+    "net_rupees": -17507.0,
+    "n_matching_in_val_month": 79
+  },
+  "new_partner_and_post_may_no_amount_filter": {
+    "fraud_claims_caught": 4,
+    "precision": 0.1,
+    "fraud_rupees_caught": 6573.0,
+    "net_rupees": -17507.0,
+    "n_matching_in_val_month": 79
+  },
+  "rule_only_risky_segment": {
+    "fraud_claims_caught": 9,
+    "precision": 0.225,
+    "fraud_rupees_caught": 12048.0,
+    "net_rupees": -10132.0,
+    "n_matching_in_val_month": 64,
+    "note": "rule alone produced >= K matching claims"
+  },
+  "model_logistic_regression": {
+    "fraud_claims_caught": 9,
+    "precision": 0.225,
+    "fraud_rupees_caught": 11246.0,
+    "net_rupees": -10934.0
+  },
+  "rule_vs_model_overlap_at_k": {
+    "k": 40,
+    "overlap_count": 29,
+    "model_claims_outside_rule_top_k": 11,
+    "of_those_also_outside_risky_segment_entirely": 0
+  }
+}

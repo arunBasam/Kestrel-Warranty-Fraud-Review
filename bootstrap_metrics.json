@@ -1,0 +1,48 @@
+{
+  "method": "non-parametric bootstrap, resampling the June 2026 validation set with replacement, scored by the model fit on pre-June training data",
+  "n_resamples_requested": 3000,
+  "n_resamples_skipped_single_class_in_resample": 0,
+  "roc_auc": {
+    "point_estimate_on_full_val_set": 0.7669385607156953,
+    "bootstrap_mean": 0.7671296162650615,
+    "ci_95_low": 0.6354730151484097,
+    "ci_95_high": 0.8857037233817404,
+    "n_resamples_used": 3000
+  },
+  "at_k=40_desk_capacity_ceiling": {
+    "precision_at_k": {
+      "point_estimate_on_full_val_set": 0.225,
+      "bootstrap_mean": 0.21379166666666666,
+      "ci_95_low": 0.1,
+      "ci_95_high": 0.35,
+      "n_resamples_used": 3000
+    },
+    "net_rupees_at_k": {
+      "point_estimate_on_full_val_set": -10934.0,
+      "bootstrap_mean": -11616.618,
+      "ci_95_low": -19841.175,
+      "ci_95_high": -2249.8499999999995,
+      "n_resamples_used": 3000
+    }
+  },
+  "at_k=10_recommended_operating_point": {
+    "precision_at_k": {
+      "point_estimate_on_full_val_set": 0.4,
+      "bootstrap_mean": 0.38576666666666665,
+      "ci_95_low": 0.1,
+      "ci_95_high": 0.7,
+      "n_resamples_used": 3000
+    },
+    "net_rupees_at_k": {
+      "point_estimate_on_full_val_set": 913.0,
+      "bootstrap_mean": 523.5,
+      "ci_95_low": -4856.0,
+      "ci_95_high": 6545.0,
+      "n_resamples_used": 3000
+    }
+  },
+  "p_net_rupees_positive": {
+    "k=40": 0.009333333333333334,
+    "k=10": 0.5493333333333333
+  }
+}
